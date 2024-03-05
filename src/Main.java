@@ -6,7 +6,7 @@ public class Main {
     IncrementThread[] threads = new IncrementThread [numThreads];
     // Create and start the threads
     for (int i = 0; i < numThreads; i++) {
-        threads[1] = new IncrementThread(counter, incrementsPerThread);
+        threads[i] = new IncrementThread(counter, incrementsPerThread);
         threads[i].start();
     }
     //Wait for all threads to finish
